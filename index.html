@@ -1,8 +1,15 @@
 <!doctype html>
 <html lang="tr-TR">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Türkiye'den tüm dünyaya uygun fiyata sipariş</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//assets-auctionnudge.s3.amazonaws.com/site/css/all-220418.gz.css" rel="stylesheet">	
+		
+  <!-- Fonts -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:100,300,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 <style>
@@ -18,14 +25,14 @@ div#auction-nudge-items table td.ends {
 		<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript">
 			function auction_nudge_loaded() {
-				$('div.auction-nudge.an-ends').hide();
+				$('div.auction-nudge .an-ends').hide();
 				$('div.auction-nudge #an-search-submit, div.auction-nudge #an-search-box, div.auction-nudge li, div.auction-nudge td, div.auction-nudge th, div.auction-nudge strong, div.auction-nudge div.an-ends, div.auction-nudge div.an-view, div.auction-nudge li.an-page-next, div.auction-nudge li.an-page-prev, div.auction-nudge select#an-cats-nav, div.auction-nudge span.an-bids').each(function() {
 					//Get HTML
 					var an_html = $(this).html();
 					
 					//=== START edit for your language ===
 
-					an_html = an_html.replace(/Search items.../gi, 'Kitap Adı');					
+					an_html = an_html.replace(/Search items.../gi, '');					
 					an_html = an_html.replace(/Search/gi, 'Ara');					
 					
 					//Pagination
@@ -47,3 +54,4 @@ div#auction-nudge-items table td.ends {
 		<!-- END Translate language -->	
 
 </body>
+</html>
