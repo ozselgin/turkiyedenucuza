@@ -1,3 +1,33 @@
 <body>
+  
 <script type="text/javascript" src="//www.auctionnudge.com/feed/item/js/theme/responsive/page/init/img_size/120/search_box/1/blank/1/show_logo/1/lang/english/SellerID/turkiyedenucuzacom/siteid/77/MaxEntries/20"></script><div id="auction-nudge-items" class="auction-nudge"></div>
+
+		<!-- START Translate language  -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript">
+			function auction_nudge_loaded() {
+				$('div.auction-nudge li, div.auction-nudge td, div.auction-nudge th, div.auction-nudge strong, div.auction-nudge div.an-ends, div.auction-nudge div.an-view, div.auction-nudge li.an-page-next, div.auction-nudge li.an-page-prev, div.auction-nudge select#an-cats-nav, div.auction-nudge span.an-bids').each(function() {
+					//Get HTML
+					var an_html = $(this).html();
+					
+					//=== START edit for your language ===
+
+					//Pagination
+					an_html = an_html.replace(/Previous/gi, 'Önceki sayfa');					
+					an_html = an_html.replace(/Next/gi, 'Sonraki sayfa');				
+
+					//Used in multiple themes
+					an_html = an_html.replace(/Buy It Now/gi, 'Satın al.');
+					an_html = an_html.replace(/Ends/gi, '');				
+					an_html = an_html.replace(/View Item/gi, 'İncele');
+					
+					//=== END edit for your language ===
+					
+					//Update HTML			
+					$(this).html(an_html);					
+				});
+			}
+		</script>
+		<!-- END Translate language -->	
+
 </body>
